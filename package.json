@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/Turnsa/piiquante/issues"
   },
-  "homepage": "https://github.com/Turnsa/piiquante#readme"
+  "homepage": "https://github.com/Turnsa/piiquante#readme",
+  "dependencies": {
+    "express": "^4.17.2"
+  }
 }
