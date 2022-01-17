@@ -6,11 +6,7 @@ const userRoutes = require('./routes/user');
 const sauceRoutes = require('./routes/sauce');
 const { dirname } = require('path');
 
-mongoose.connect('mongodb+srv://Admin:eRmou1FiZQ6xd9dR@cluster0.fz686.mongodb.net/myFirstDatabase?retryWrites=true&w=majority',
-  { useNewUrlParser: true,
-    useUnifiedTopology: true })
-  .then(() => console.log('Connexion à MongoDB réussie !'))
-  .catch(() => console.log('Connexion à MongoDB échouée !'));
+require('./config/db')
 
   
 const app = express();
